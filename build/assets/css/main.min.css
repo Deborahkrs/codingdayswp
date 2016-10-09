@@ -1,3 +1,172 @@
 body {
-  background-color: lightblue;
-}
+    margin: 0;
+    font-family: montserrat;
+  }
+
+
+  #starter {
+    width:150px;
+  }
+
+  header {
+    position:fixed;
+    background-color:white;
+    width:100%;
+    top:0%;
+    left:0%;
+    z-index: 3;
+  }
+
+  .menu {
+    float:right;
+  }
+
+  .menu li {
+    display:inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0d066b;
+  }
+
+  #mentors {
+    margin-right: 20px;
+  }
+
+
+  .textcover h1 {
+    color:#27bb69;
+    font-size: 32px;
+
+  }
+
+
+
+  .bouton {
+    text-decoration: none;
+    background-color:rgba(255, 152, 0, 0.74);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color:white;
+    }
+
+  .bouton:hover {
+    box-shadow: 10px 10px 5px #888888;
+   background-color: rgba(245, 147, 3, 0.91);
+  }
+
+  .section1 {
+    height:calc(100vh - 67px);
+    margin-top:67px;
+    position:relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .section1 div {
+    background-image: url(Visuel_Schoolab.jpg);
+    background-size:cover;
+    filter: opacity(40%);
+    height:100%;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .section1 article {
+    width: 62%;
+    top:50%;
+    transform: translateY(-50%);
+    margin:auto;
+    position:relative;
+  }
+
+
+  .textcover p {
+      font-size: 20px;
+  }
+
+  .benefices article {
+      width: 33%;
+      display: inline-block;
+      text-align: center;
+      height: 180px;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+      display: inline-block;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+
+  .maison {
+    size:100%;
+    font-size:60px;
+    color: #000080;
+  }
+
+  .fusee {
+    size:100%;
+    font-size:60px;
+    color: #90EE90;
+  }
+  .expert {
+    size:100%;
+    font-size:60px;
+    color: #DC143C;
+  }
+
+  .partenaires {
+    text-align: center;
+  }
+
+  .partenaires h2 {
+    font-size: 30px;
+  }
+
+  footer {
+    background-color:#3CB371;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+  }
+
+  .remerciements{
+    padding-top:15px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  @media (max-width:814px){
+    .logo_entreprises{
+      width: 100%;
+    }
+  }
+
+  @media (max-width:735px){
+    header{
+      text-align: center;
+    }
+
+    .menu{
+      float:none;
+    }
+  }
+
+  @media (max-width:630px){
+    .benefices article{
+      width:100%;
+      height:80px;
+    }
+
+    .partenaires{
+      display:inline-block;
+    }
+  }
